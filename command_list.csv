@@ -1,0 +1,26 @@
+    1  cd '/c/Users/fedin/OneDrive/Робочий стіл/QA_35'
+    2  git config --global user.name "Kateryna Fedina"
+    3  git config --global user.email fedina.es@gmail.com
+    4  git clone https://github.com/KatyaFedina/HW_10.git
+    5  cd HW_10
+    6  touch text_ignore.txt
+    7* 
+    8  git status
+    9  git add *
+   10  git commit -a
+   11  touch main_test.txt
+   12  git add *
+   13  git commit -a
+   14  git checkout -b developer
+   15  git checkout developer
+   16  touch develop_test.txt
+   17  git add *
+   18  git commit -a
+   19  vim develop_test.txt
+   20  git status
+   21  git add *
+   22  git commit -a
+   23  git checkout main
+   24  git merge developer
+   25  git log
+   26  history > command_list.csv
